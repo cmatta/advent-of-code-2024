@@ -47,7 +47,7 @@ export function part2(input: string): number {
       const newLevels = levels.filter((_, idx) => idx !== i)
       const isMonotonic = allIncrease(newLevels) || allDecrease(newLevels)
       if (isMonotonic && correctDiff(newLevels)) {
-        safeReports+= 1; 
+        safeReports += 1; 
         break;
       }
     }

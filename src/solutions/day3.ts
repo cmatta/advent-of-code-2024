@@ -33,7 +33,7 @@ export function part2(input: string): number {
   const pattern = new RegExp(CONTROL_PATTERN);
   for (const line of lines) {
     const matches = line.match(pattern);
-    if(!matches) break;
+    if(!matches) continue;
     for (const match of matches) {
       if (match === "don't()") doContinue = false;
       if (match === "do()") doContinue = true;

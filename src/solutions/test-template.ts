@@ -6,7 +6,7 @@ pqr3stu8vwx
 a1b2c3d4e5f
 treb7uchet`;
 
-  test(' Day __DAY__ part 1', () => {
+  test('Day __DAY__ part 1', () => {
     expect(part1(exampleInput)).toBe(0);
   });
 
